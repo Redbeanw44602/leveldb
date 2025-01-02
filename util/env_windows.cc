@@ -4,6 +4,8 @@
 
 // Prevent Windows headers from defining min/max macros and instead
 // use STL.
+#define _CRT_SECURE_NO_WARNINGS
+
 #ifndef NOMINMAX
 #define NOMINMAX
 #endif  // ifndef NOMINMAX

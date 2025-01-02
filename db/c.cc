@@ -19,6 +19,10 @@
 #include "leveldb/status.h"
 #include "leveldb/write_batch.h"
 
+#if defined(_MSC_VER)
+#define strdup _strdup
+#endif
+
 using leveldb::Cache;
 using leveldb::Comparator;
 using leveldb::CompressionType;
